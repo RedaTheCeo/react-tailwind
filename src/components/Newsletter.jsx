@@ -1,14 +1,16 @@
 import React from 'react';
+import zb from "../assets/zombie.gif"
+import finish from "../assets/finish.png"
 
 const Newsletter = () => {
   return (
-    <div className='w-full py-16 text-white px-4'>
+    <div className='newsletter w-full py-16 text-white px-4'>
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
         <div className='lg:col-span-2 my-4'>
-          <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
-            Want tips & tricks to optimize your flow?
+          <h1 className='md:text-4xl sm:text-3xl text-xl font-bold py-2 w-2/3'>
+            Can you help the zombie to reach the finish line?
           </h1>
-          <p>Sign up to our newsletter and stay up to date.</p>
+          <p>This zombie is so lost</p>
         </div>
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full'>
@@ -26,6 +28,10 @@ const Newsletter = () => {
             <span className='text-[#00df9a]'>Privacy Policy.</span>
           </p>
         </div>
+        <div className='zmn'>
+          <img className='zmb' src={zb} alt="" width={130} height={130} />
+        </div>
+        <img className='finish' src={finish} width={130} height={130} />
       </div>
     </div>
   );
