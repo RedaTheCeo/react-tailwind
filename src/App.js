@@ -58,12 +58,11 @@ function App() {
   }, []);
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+          <Navbar />
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-            
         </Routes>
       </BrowserRouter>
 

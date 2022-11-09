@@ -72,7 +72,7 @@ const Hero = () => {
             </p>
           </div>
           <p className='md:text-2xl text-xl font-bold text-gray-500'>“Any application that can be written in JavaScript, will eventually be written in JavaScript.”</p>
-          <p className='md:text-xl text-md font-bold  text-gray-400'>Jeff Atwood</p>
+          <p className='md:text-xl text-md font-bold text-gray-400'>Jeff Atwood</p>
           <button className=' w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get In Touch</button>
         </div>
         <div className="stars">
@@ -97,9 +97,7 @@ const Hero = () => {
         <div className='zombie'>
       </div>
       </div>
-      
     </>
-
   );
 };
 
