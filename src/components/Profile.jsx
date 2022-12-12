@@ -1,11 +1,10 @@
 import React from 'react';
-import Laptop from '../assets/laptop.jpg';
 import aboutme from '../assets/about-me.svg';
 
 
-const Analytics = () => {
+const Profile = () => {
   return (
-    <div className='analytics w-full bg-white py-16 px-4'>
+    <section id='profile' className='analytics w-full bg-white py-16 px-4'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
         <img className='w-[400px] mx-auto my-4' src={aboutme} alt='/' />
         <div className='flex flex-col justify-center'>
@@ -17,7 +16,6 @@ const Analytics = () => {
             I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
           </p>
           <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button> */}
-
           <div className="min-w-screen flex items-center justify-center px-5 py-5">
             <div className="rounded-lg w-full shadow-xl bg-gray-900 text-white">
               <div className="border-b border-gray-800 px-8 py-3">
@@ -33,14 +31,12 @@ const Analytics = () => {
                 <p>{'}'}</p>
               </div>
             </div>
-          </div>
-
-          
+          </div>  
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 
-export default Analytics;
+export default Profile;

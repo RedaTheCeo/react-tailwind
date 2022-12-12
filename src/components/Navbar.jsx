@@ -54,14 +54,35 @@ const Navbar = () => {
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white"
     >
       <h1 ref={titleRef} className="w-full text-3xl font-bold text-[#00df9a]">
-        BEN R.
+        <Link to="/">BEN R.</Link>
       </h1>
       <ul className="links hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link
+            onClick={() =>
+              document
+                .getElementById("profile")
+                .scrollIntoView({ behavior: "smooth", block: "nearest" })
+            }
+          >
+            Profile
+          </Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link
+            onClick={() =>
+              document
+                .getElementById("skills")
+                .scrollIntoView({ behavior: "smooth", block: "nearest" })
+            }
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
@@ -75,12 +96,35 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">BEN R.</h1>
-        <li className="p-4 border-b border-gray-600">Home</li>
-        <li className="p-4 border-b border-gray-600">Company</li>
-        <li className="p-4 border-b border-gray-600">Resources</li>
-        <li className="p-4 border-b border-gray-600">About</li>
-        <li className="p-4">
+        <h1 ref={titleRef} className="w-full text-3xl font-bold text-[#00df9a]">
+          <Link to="/">BEN R.</Link>
+        </h1>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link
+            onClick={() =>
+              document
+                .getElementById("profile")
+                .scrollIntoView({ behavior: "smooth", block: "nearest" })
+            }
+          >
+            Profile
+          </Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
+          <Link
+            onClick={() =>
+              document
+                .getElementById("skills")
+                .scrollIntoView({ behavior: "smooth", block: "nearest" })
+            }
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="p-4 font-mono font-light text-white hover:text-[#65f1c4] duration-300">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

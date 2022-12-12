@@ -1,19 +1,19 @@
 import React from 'react';
-import Analytics from './Analytics';
-import Cards from './Cards';
+import Profile from './Profile';
+import Skills from './Skills';
 import Footer from './Footer';
 import Hero from './Hero'
 import Newsletter from './Newsletter';
 
 const Portfolio = () => {
     return (
-        <div>
+        <>
             <Hero />
-            <Analytics />
+            <Profile />
             <Newsletter />
-            <Cards />
+            <Skills />
             <Footer />
-        </div>
+        </>
     );
 }
 

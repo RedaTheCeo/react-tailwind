@@ -6,12 +6,7 @@ import {
   Link,
   Routes
 } from "react-router-dom";
-import Analytics from './components/Analytics';
-import Cards from './components/Cards';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -31,7 +26,7 @@ function App() {
       ease: 'ease-in',
       scrollTrigger: {
         trigger: '.analytics',
-        // markers: true,
+        markers: false,
         start: 'top 65%',
         end: 'bottom 0%',
         toggleActions: 'play complete restart reverse',
@@ -45,7 +40,7 @@ function App() {
       x: 2100, duration: 5, ease: "none", overwrite: "auto",
       scrollTrigger: {
         trigger: '.newsletter',
-        markers: true,
+        markers: false,
         start: 'top center',
         end: '600 40%',
         scrub: 3,
