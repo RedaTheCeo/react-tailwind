@@ -73,3 +73,9 @@ body {
   overflow: hidden;
   z-index: -1;
 }
+
+canvas {
+  width: 606px;
+  height: 600px;
+  cursor: grab;
+}

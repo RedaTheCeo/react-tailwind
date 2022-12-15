@@ -7,6 +7,7 @@ import p3 from "../assets/leaf03.png";
 import p4 from "../assets/leaf04.png";
 import p5 from "../assets/leaf05.png";
 import Parallax from "parallax-js";
+import Animated from "./Animated";
 
 const Hero = () => {
   const t1 = useRef(null);
@@ -66,6 +67,7 @@ const Hero = () => {
     <>
       <div className="hero text-white">
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
+          {/* <Animated /> */}
           <p ref={t1} className="text-[#00df9a] font-bold p-2">
             Web Developper
           </p>
@@ -81,9 +83,9 @@ const Hero = () => {
               <Typed
                 className="md:text-5xl sm:text-4xl text-[#00df9a] text-xl font-bold md:pl-4 pr-1"
                 strings={[" Front", " Back"]}
-                typeSpeed={220}
-                backSpeed={140}
-                loop
+                typeSpeed={25}
+                // backSpeed={140}
+                // loop
               />
             </p>
 
@@ -119,7 +121,7 @@ const Hero = () => {
             <li className="layer" data-depth=".3">
               <img src={p5} alt="" />
             </li>
-          </ul>
+          </ul> 
         </div>
       </div>
     </>
